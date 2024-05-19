@@ -1,0 +1,138 @@
+/* .search-section {
+  background-image: url("../IMAGES/searchPage1.jpg");
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+
+  display:flex;
+
+}
+
+.container{
+  width:200px;
+  height:200px;
+  border: 2px solid green;
+}
+
+.sitePageContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  padding: 60px 32px;
+  width: 600px;
+  height:200px;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.75);
+  border:2px solid black;
+} */
+
+/*
+.autocomplete {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 720px;
+
+  text-align: center;
+}
+
+.autocomplete .search-box {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  width: 100%;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  padding: 10px 0px;
+}
+.search-icon {
+  width: 5%;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+#myInput {
+  width: 85%;
+  
+  font-size: 16px;
+  border: none;
+}
+
+#myInput:focus {
+  outline: none;
+}
+
+input[type="submit"] {
+  padding: 10px;
+}
+
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  
+  width: 50%;
+  max-height: 200px;
+  overflow-y: auto;
+  background-color: #f1f1f1;
+}
+
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+
+.autocomplete-items div:hover {
+  background-color: #e9e9e9;
+}
+
+.autocomplete-active {
+  color: #ffffff;
+}
+
+.searchData {
+
+  margin: 20px 0px;
+  padding:0px 20px;
+  flex-wrap: wrap;
+  width: 100%;
+  position: absolute;
+  top: 25%;
+  display: none;
+  height:500px;
+  overflow-y: auto;
+  justify-content: space-evenly;
+}
+
+.data-item {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #ccc;
+  background-color: white;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 5px;
+}
+
+.data-item .siteImage {
+  width: 100%;
+  height: 80%;
+}
+
+
+.generatePathBtn{
+
+
+}
+ */
