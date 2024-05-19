@@ -1,0 +1,191 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav_container {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: #fff;
+  font-weight: bolder;
+  background-color: rgba(0, 0, 0, 0.416);
+  z-index: 100;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.8rem;
+}
+.nav_menu {
+  display: inline;
+}
+
+/* Navigation List */
+.nav_list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+/* Navigation Item */
+.nav_item {
+  margin-right: 20px;
+}
+
+/* Navigation Link */
+.nav_link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav_link:hover {
+  cursor: pointer;
+}
+
+.active {
+  border-bottom: 2px solid white;
+}
+
+section {
+  height: 100vh;
+}
+
+.home {
+  background-image: url("../images/home.jpg");
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+}
+
+.home_container {
+  /* border: 5px solid red; */
+  position: absolute;
+  top: 17.5%;
+  display: flex;
+  height: 500px;
+  width: 80%;
+  margin: 0% 10%;
+  border: 1px solid white;
+}
+
+.home_data {
+  width: 50%;
+}
+
+.form {
+  color: white;
+  width: 50%;
+}
+.SignInBtn {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.AboutUs {
+  background-image: url("../images/tourist.avif");
+  background-size: 100%;
+  background-position: center;
+}
+
+.about-us-content {
+  height: 100%;
+  width: 45%;
+  margin-left: 52%;
+  padding: 70px 100px;
+  /* 
+  backdrop-filter: blur(7px) saturate(180%);
+  -webkit-backdrop-filter: blur(7px) saturate(180%);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  background: rgba(74, 144, 226, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
+}
+
+/* Footer Container */
+.footer_container {
+  background-color: #333;
+  color: #fff;
+  padding: 50px 20px;
+}
+
+/* Footer Content */
+.footer_content {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 100px;
+}
+
+/* Footer Data */
+.footer_data {
+  flex: 1 1 25%;
+  margin: 10px 10px;
+}
+
+/* Footer Title */
+.footer_title {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.footer_description {
+  font-size: large;
+  margin-bottom: 15px;
+}
+
+/* Footer Subtitle */
+.footer_subtitle {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+/* Footer Item */
+.footer_item {
+  margin-bottom: 10px;
+}
+
+/* Footer Link */
+.footer_link {
+  color: #fff; /* Change the link color as needed */
+  text-decoration: none;
+}
+
+/* Footer Social Icons */
+.footer_social {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+/* Footer Copyrights */
+.footer_copyrights {
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* Footer Terms */
+.footer_terms {
+  margin-top: 10px;
+}
+.footer_link {
+  margin: 0px 10px;
+}
+/* Footer Link Hover Effect */
+.footer_link:hover {
+  text-decoration: underline;
+}
