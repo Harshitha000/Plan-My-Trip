@@ -13,6 +13,6 @@ if($result->num_rows>0){
     exit;
 }
 else
-    echo "<script>alert('Login is not successful')</script>";
+    echo "<script>alert('Login is not successful');window.location.href = '../HTML/index.php'</script>";
     $connection->close();
 ?>

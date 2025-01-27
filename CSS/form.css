@@ -74,7 +74,8 @@
 .pass:hover a {
   text-decoration: underline;
 }
-.field input[type="submit"] {
+.field input[type="submit"],
+.field button {
   background: #3498db;
   border: 1px solid #2691d9;
   color: white;
@@ -84,7 +85,8 @@
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
 }
-.field input[type="submit"]:hover {
+.field input[type="submit"]:hover,
+.field button:hover {
   background: #2691d9;
 }
 .login {
@@ -111,4 +113,20 @@
 
 .SignUpForm {
   display: block;
+}
+
+.otp-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.otp-container .otpInput {
+  width: 60% !important;
+  margin: 0px -20px;
+}
+.otp-container .otpButton {
+  width: 40% !important;
+  height: 100%;
+  font-size: 14px;
 }

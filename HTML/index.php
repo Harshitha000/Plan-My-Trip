@@ -13,17 +13,17 @@
             <header>Login Form</header>
             <form action="../PHP/login.php" method="post">
                <div class="field">
-                  <span class="fa fa-user"></span>
+                  <span class="fa fa-envelope"></span>
                   <input type="text" required placeholder="Email" name="email" value="">
                </div>
                <div class="field space">
                   <span class="fa fa-lock"></span>
                   <input type="password" class="pass-key" required placeholder="Password" name="password" value="">
                </div>
-               <div class="pass">
+               <!-- <div class="pass">
                   <a href="#">Forgot Password?</a>
-               </div>
-               <div class="field">
+               </div> -->
+               <div class="field space">
                   <input type="submit" value="LOGIN">
                </div>
             </form>
@@ -41,12 +41,17 @@
                   <input type="text" required placeholder="Full Name" name="fname" value="">
                </div>
                <div class="field space">
-                <span class="fa fa-user"></span>
-                <input type="text" required placeholder="Email" name="email" value="">
+                <span class="fa fa-envelope"></span>
+                <input type="text" required placeholder="Email" name="email" id="email" value="">
                </div>
                <div class="field space">
                   <span class="fa fa-lock"></span>
                   <input type="password" class="pass-key" required placeholder="Password" name="password" value="">
+               </div>
+               <div class="field space otp-container">
+                  <span class="fa fa-key"></span>
+                  <input type="number" class="otpInput" required placeholder="Enter OTP" name="otp" id="otp" class="otpInput" value="">
+                  <button type="button" id="sendOtpBtn" class="otpButton">Send OTP</button>
                </div>
                <div class="field space">
                   <input type="submit" value="SIGNUP">
@@ -87,6 +92,35 @@
       </section>
     </main>
     <?php include "../assets/footer.php"; ?>
+    <script>
+      document.getElementById("sendOtpBtn").addEventListener("click", function () {
+         const email = document.getElementById("email").value;
+
+         fetch('../PHP/sendOtp.php', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email })
+         })
+         .then(response => {
+            if (!response.ok) {
+               throw new Error('Network response was not ok');
+            }
+            return response.json(); // Parse JSON
+         })
+         .then(data => {
+            if (data.success) {
+               alert('OTP sent to your email!');
+            } else {
+               alert('Failed to send OTP. Please try again.');
+            }
+         })
+         .catch(error => {
+            console.error('Error:', error);
+            alert('An error occurred. Please try again.');
+         });
+
+      });
+    </script>
     <script src="../Javascript/script.js"></script>
     <script src="../Javascript/form.js"></script>
   </body>
